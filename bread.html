@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" href="/images/logo2.png">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pizza House</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo"><img src="images/logo2.png"</a>
+
+      <nav class="navbar">
+         <a href="home.html">Home</a>
+         <a href="menu.html">Menu</a>
+         <a href="order-online.php">Order Online</a>      
+         <a href="about.php">About Us</a>
+         <a href="contact.php">Contact Us</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+      </div>
+
+   </section>
+
+</header>
+<!-- header section ends -->
+
+<div class="user-account">
+
+    <section>
+ 
+       <div id="close-account"><span>close</span></div>
+ 
+       <div class="user">
+          <p><span>you are not logged in now!</span></p>
+       </div>
+ 
+       <div class="display-orders">
+          <p>pizza-1 <span>( $3/- x 2 )</span></p>
+          <p>pizza 03 <span>( $2/- x 1 )</span></p>
+          <p>pizza 06 <span>( $4/- x 4 )</span></p>
+          <p>pizza 07 <span>( $2/- x 1 )</span></p>
+       </div>
+ 
+       <div class="flex">
+ 
+          <form action="" method="post">
+             <h3>login now</h3>
+             <input type="email" name="email" required class="box" placeholder="Enter your email" maxlength="50">
+             <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
+             <input type="submit" value="login now" name="login" class="btn">
+          </form>
+ 
+          <form action="" method="post">
+             <h3>register now</h3>
+             <input type="text" name="name" required class="box" placeholder="Enter your name" maxlength="20">
+             <input type="email" name="email" required class="box" placeholder="Enter your email" maxlength="50">
+             <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
+             <input type="password" name="cpass" required class="box" placeholder="Confirm your password" maxlength="20">
+             <input type="submit" value="register now" name="register" class="btn">
+          </form>
+ 
+       </div>
+ 
+    </section>
+ 
+ </div>
+ 
+ <div class="my-orders">
+ 
+    <section>
+ 
+       <div id="close-orders"><span>close</span></div>
+ 
+       <h3 class="title"> MY ORDERS </h3>
+ 
+    </section>
+ 
+ </div>
+ 
+ <div class="shopping-cart">
+ 
+    <section>
+ 
+       <div id="close-cart"><span>close</span></div>
+ 
+       <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="/images/images/pizza-1.jpg" alt="">
+          <div class="content">
+             <p>pizza-1 <span>( $3/- x 2 )</span></p>
+             <form action="" method="post">
+                <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+             </form>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="/images/images/pizza-3.jpg" alt="">
+          <div class="content">
+             <p>pizza-3 <span>( $2/- x 1 )</span></p>
+             <form action="" method="post">
+                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+             </form>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="/images/images/pizza-6.jpg" alt="">
+          <div class="content">
+             <p>pizza-6 <span>( $4/- x 2 )</span></p>
+             <form action="" method="post">
+                <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+             </form>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="/images/images/pizza-7.jpg" alt="">
+          <div class="content">
+             <p>pizza-7 <span>( $2/- x 1 )</span></p>
+             <form action="" method="post">
+                <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                <button type="submit" class="fas fa-edit" name="update_qty"></button>
+             </form>
+          </div>
+       </div>
+ 
+       <a href="#order" class="btn">order now</a>
+ 
+    </section>
+ 
+ </div>
+
+<!-- menu section starts  -->
+<section id="menu" class="menu">
+
+    <h1 class="heading">BREAD</h1>
+ 
+    <div class="box-container">
+ 
+        <div class="box">
+          <img src="images/cinna.jpg" alt="">
+          <p>RM11.90</p>
+          <h2>STIX BREAD</h2>
+          <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+        </div>
+ 
+        <div class="box">
+            <img src="images/cheesyStick.jpg" alt="">
+            <p>RM14.90</p>
+            <h2>STIX BREAD</h2>
+            <form action="" method="post">
+              <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+              <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+           </form>
+          </div>
+
+        <div class="box">
+            <img src="images/bread.jpg" alt="">
+            <p>RM11.90</p>
+            <h2>STIX BREAD</h2>
+            <form action="" method="post">
+              <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+              <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+           </form>
+          </div>
+
+          <div class="box">
+            <img src="images/garlicBread.jpg" alt="">
+            <p>RM9.90</p>
+            <h2>STIX BREAD</h2>
+            <form action="" method="post">
+              <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+              <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+           </form>
+          </div>
+
+          <div class="box">
+            <img src="images/garlicTwist.jpg" alt="">
+            <p>RM15.90</p>
+            <h2>STIX BREAD</h2>
+            <form action="" method="post">
+              <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+              <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+           </form>
+          </div>
+
+        <div class="box">
+          <img src="images/garlicFrench.jpg" alt="">
+          <p>RM12.90</p>
+          <h2>STIX BREAD</h2>
+          <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+        </div>
+
+        <div class="box">
+          <img src="images/cinnaTwist.jpg" alt="">
+          <p>RM16.90</p>
+          <h2>STIX BREAD</h2>
+          <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+        </div>
+    </div>
+    <br>
+    <br>
+ 
+    <a href="menu.html" class="btn">BACK TO MAIN MENU</a>
+ </section>
+
+ <section class="footer">
+
+   
+    <div class="box-container">
+ 
+       <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>Phone number</h3>
+          <p>Tel. : 03-934 3429</p>
+          <p>Fax. : 03-131 9324</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>our address</h3>
+          <p>Kuala Lumpur, Malaysia, 56100</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours</h3>
+          <p>09:00am to 10:00pm</p>
+       </div>
+ 
+       <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email address</h3>
+          <p>pizzahousehq@gmail.com</p>
+       </div>
+ 
+    </div>
+ 
+    <div class="credit">
+       <p>Copyright © 2023 Pizza House Malaysia. MY Pizza House SDN. BHD. 
+       All Rights Reserved.</p>
+       </div>
+ 
+ </section>
+ 
+ <!-- footer section ends -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- custom js file link  -->
+ <script src="script.js"></script>
+ 
+ </body>
+ </html>

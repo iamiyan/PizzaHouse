@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" href="/images/logo2.png">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pizza House</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo"><img src="images/logo2.png"</a>
+
+      <nav class="navbar">
+         <a href="home.html">Home</a>
+         <a href="menu.html">Menu</a>
+         <a href="order-online.php">Order Online</a>      
+         <a href="about.php">About Us</a>
+         <a href="contact.php">Contact Us</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" class="fas fa-shopping-cart"></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are not logged in now!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>pizza-1 <span>( $3/- x 2 )</span></p>
+         <p>pizza 03 <span>( $2/- x 1 )</span></p>
+         <p>pizza 06 <span>( $4/- x 4 )</span></p>
+         <p>pizza 07 <span>( $2/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="Enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" required class="box" placeholder="Enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="Enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="Confirm your password" maxlength="20">
+            <input type="submit" value="register now" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> MY ORDERS </h3>
+
+   </section>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>close</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="/images/images/pizza-1.jpg" alt="">
+         <div class="content">
+            <p>pizza-1 <span>( $3/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="/images/images/pizza-3.jpg" alt="">
+         <div class="content">
+            <p>pizza-3 <span>( $2/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="/images/images/pizza-6.jpg" alt="">
+         <div class="content">
+            <p>pizza-6 <span>( $4/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="/images/images/pizza-7.jpg" alt="">
+         <div class="content">
+            <p>pizza-7 <span>( $2/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/images/home-img-1.png" alt="">
+            </div>
+            <div class="content">
+               <h3>homemade Pepperoni Pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/images/home-img-2.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pizza With Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/images/home-img-3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Mascarpone And Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">SERVING ALL PIZZA LOVERS WITH A TASTE OF HOME</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/htpizza.png" alt="">
+         
+      </div>
+
+      <div class="box">
+         <img src="images/ingred.png" alt="">
+         
+      </div>
+
+      <div class="box">
+         <img src="images/ovenpizza.png" alt="">
+         
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading">OUR MENU</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/pepperoniPizz.png" alt="">
+         <p>PIZZA</p>
+      </div>
+
+      <div class="box">
+         <img src="images/cheesyStick.jpg" alt="">
+         <p>BREAD</p>
+      </div>
+      
+      <div class="box">
+         <img src="images/bbqChick.jpg" alt="">
+         <p>CHICKEN</p>
+      </div>
+      
+      <div class="box">
+         <img src="images/drinkTropicana.jpg" alt="">
+         <p>DRINKS</p>
+      </div>
+      
+      <div class="box">
+         <img src="images/chocCake.jpg" alt="">
+         <p>DESSERTS</p>
+      </div>
+
+      <div class="box">
+         <img src="images/onionRing.jpg" alt="">
+         <p>SIDES</p>
+      </div>
+   </div>
+   <br>
+   <br>
+
+   <a href="menu.html" class="btn">MENU</a>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- about us section starts  -->
+
+<section class="about-us" id="about-us">
+
+   <h3>Learn More About Pizza House</h3>
+
+   <a href="#about" class="btn">ABOUT US</a>
+
+</section>
+
+<!-- about us section ends -->
+<div class="order-now">
+
+   <section class="box-container">
+
+      <div class="box">
+      <h1>Ready for the best?</h1>
+      <p>Our delivery service covers selected areas throughout 12 states in Malaysia!</p>
+      <a href="#order" class="btn">ORDER NOW</a>
+      </div>
+
+   </section>
+</div>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>Phone number</h3>
+         <p>Tel. : 03-934 3429</p>
+         <p>Fax. : 03-131 9324</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>our address</h3>
+         <p>Kuala Lumpur, Malaysia, 56100</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>09:00am to 10:00pm</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <p>pizzahousehq@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      <p>Copyright © 2023 Pizza House Malaysia. MY Pizza House SDN. BHD. 
+      All Rights Reserved.</p>
+      </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
